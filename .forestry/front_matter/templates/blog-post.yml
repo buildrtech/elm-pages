@@ -30,3 +30,7 @@ fields:
     schema:
       format: markdown
   label: content
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
