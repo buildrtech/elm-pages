@@ -17,8 +17,11 @@ front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  install_dependencies_command: npm install
+  preview_env:
+  - AIRTABLE_TOKEN=keyxXWnci3b1xXdre
+  preview_output_directory: examples/docs/dist
+  install_dependencies_command: cd examples/docs && npm install
   preview_docker_image: node:10
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run forestry:preview
+  instant_preview_command: npm run build
