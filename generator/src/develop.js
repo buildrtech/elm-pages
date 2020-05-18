@@ -43,7 +43,8 @@ function start({ routes, debug, customPort, manifestConfig }) {
     hot: true,
     inline: true,
     host: "localhost",
-    stats: "errors-only"
+    stats: "errors-only",
+    writeToDisk: true
   };
 
   const app = express();
